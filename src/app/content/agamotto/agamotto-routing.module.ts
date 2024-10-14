@@ -1,11 +1,12 @@
+// src/app/content/agamotto/agamotto-routing.module.ts
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePage } from './home.page';
+import { AgamottoPage } from './agamotto.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: AgamottoPage
   }
 ];
 
@@ -13,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {}
+export class AgamottoRoutingModule {}

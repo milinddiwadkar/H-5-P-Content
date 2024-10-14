@@ -1,0 +1,49 @@
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1em;
+    background-color: #f9f9f9;
+  }
+  
+  .scoreboard {
+    margin-bottom: 1em;
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .problem-container {
+    margin-bottom: 2em;
+  }
+  
+  .problem-card {
+    background-color: #232006;
+    color: #000;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+  .answers-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+  }
+  
+  ion-button {
+    margin: 0.5em 0;
+    background-color: #03a9f4;
+    color: white;
+    font-size: 1.2em;
+  }
+  
+  ion-button:hover {
+    background-color: #0288d1;
+  }
+  
+  .feedback {
+    margin-top: 1em;
+    font-size: 1.5em;
+  }
+  

@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Audio Recorder</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="recorder-container">
+    <!-- Record Button -->
+    <ion-button (click)="startRecording()" [disabled]="isRecording">Start Recording</ion-button>
+
+    <!-- Stop Button -->
+    <ion-button (click)="stopRecording()" [disabled]="!isRecording">Stop Recording</ion-button>
+
+    <!-- Play Button -->
+    <ion-button (click)="playAudio()" [disabled]="!audioBlobUrl">Play</ion-button>
+
+    <!-- Download Button -->
+    <ion-button (click)="downloadAudio()" [disabled]="!audioBlobUrl">Download</ion-button>
+
+    <!-- Playback Element -->
+    <audio #audioPlayer controls *ngIf="audioBlobUrl" [src]="audioBlobUrl"></audio>
+  </div>
+</ion-content>

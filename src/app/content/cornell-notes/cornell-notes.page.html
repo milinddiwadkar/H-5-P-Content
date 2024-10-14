@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Cornell Notes</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="calendar-outline"></ion-icon>
+        <span>14/10/2024</span>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="cornell-notes-container">
+    <div class="video-section">
+      <p>Watch the video,Trocco End to End Low Code ETL Tool | Master Trocco: Streamline Your Data Pipelines with Seamless Integration </p>
+      <div class="video-frame">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fyNkVu9EifI?si=DY0guh7vs3D_iTxR"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="notes-section">
+      <div class="note-box">
+        <div class="note-header">
+          <span>Cue</span>
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <textarea placeholder="Enter your comments, questions, etc."></textarea>
+      </div>
+      <div class="note-box">
+        <div class="note-header">
+          <span>Notes</span>
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <textarea placeholder="Enter dates, details, etc."></textarea>
+      </div>
+      <div class="note-box summary">
+        <div class="note-header">
+          <span>Summary</span>
+          <ion-icon name="eye-outline"></ion-icon>
+        </div>
+        <textarea placeholder="Summarize what you have learned"></textarea>
+      </div>
+      <ion-button expand="block">Copy</ion-button>
+    </div>
+  </div>
+</ion-content>

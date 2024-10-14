@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Collage Creator</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <input type="file" (change)="onFileSelected($event)" multiple accept="image/*" />
+  </ion-item>
+
+  <div class="template-selector">
+    <h2>Select a Template</h2>
+    <ion-segment value="grid">
+      <ion-segment-button *ngFor="let template of templates" (click)="selectTemplate(template)">
+        {{ template.name }}
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <canvas #collageCanvas width="400" height="400" style="border: 1px solid rgb(243, 233, 233) ;"></canvas>
+
+  <ion-button (click)="downloadCollage()">Download Collage</ion-button>
+</ion-content>

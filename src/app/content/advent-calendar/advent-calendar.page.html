@@ -1,0 +1,11 @@
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let row of rows">
+      <ion-col *ngFor="let day of row" (click)="openDay(day)" [attr.aria-label]="'Open door for day ' + day">
+        <div class="door">
+          <div class="day-number">{{ day }}</div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

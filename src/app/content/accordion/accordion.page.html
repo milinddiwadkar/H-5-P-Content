@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Accordion Example</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style="max-width: 600px; margin: auto; padding: 1em;">
+    <div *ngFor="let panel of panels; let i = index" class="h5p-accordion">
+      <!-- Accordion Panel Title with Arrow -->
+      <div class="h5p-panel-title"
+           [ngClass]="{'h5p-panel-expanded': isPanelExpanded(i)}"
+           (click)="togglePanel(i)"
+           style="display: flex; align-items: center; padding: 0.8em; border-top: 1px solid #eeeeee; cursor: pointer;">
+        
+        <!-- Arrow Icon -->
+        <ion-icon [ngStyle]="{'transform': isPanelExpanded(i) ? 'rotate(90deg)' : 'rotate(0)'}"
+                  name="chevron-forward-outline" 
+                  style="transition: all 200ms ease; margin-right: 0.5em;">
+        </ion-icon>
+
+        <!-- Title -->
+        <span>{{ panel.title }}</span>
+      </div>
+
+      <!-- Accordion Panel Content -->
+      <div class="h5p-panel-content" *ngIf="isPanelExpanded(i)" style="padding: 1em; border-bottom: 1px solid #eeeeee;">
+        <p>{{ panel.content }}</p>
+        <div class="source" *ngIf="panel.source">Source: <a href="{{ panel.source }}" target="_blank">{{ panel.sourceText }}</a></div>
+      </div>
+    </div>
+  </div>
+</ion-content>

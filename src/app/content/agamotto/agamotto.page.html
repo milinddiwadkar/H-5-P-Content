@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Car Presentation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-slides pager="true" class="car-slides">
+    <ion-slide *ngFor="let car of cars">
+      <div class="car-card">
+        <img [src]="car.image" alt="{{ car.name }}" />
+        <h2>{{ car.name }}</h2>
+        <h3>{{ car.model }}</h3>
+        <p>{{ car.description }}</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

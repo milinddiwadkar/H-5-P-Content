@@ -1,0 +1,31 @@
+ion-content{
+  --background: white;
+}
+
+.h5p-accordion {
+  border: 2px solid #211f1f;
+  margin-bottom: 1em;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set font color to black */
+  text-align: center; /* Center the content */
+}
+
+.h5p-panel-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black; /* Ensure the title has black font color */
+}
+
+.h5p-panel-content {
+  background-color: white; /* Set background color to white */
+  color: black; /* Set font color to black */
+  text-align: center; /* Center content inside the panel */
+  padding: 1em; /* Add padding to make the content more readable */
+}
+
+.source {
+  font-style: italic;
+  color: #666; /* Keep the original color for the source */
+  margin-top: 1em;
+  text-align: center; /* Center the source text */
+}

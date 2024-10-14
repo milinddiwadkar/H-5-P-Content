@@ -1,0 +1,44 @@
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --background: #ffffff; /* Background color */
+    padding: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .item-content img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .item-content h1,
+  .grid-item h1 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: black !important; /* Ensure h1 color is black */
+  }
+  
+  .item-content p,
+  .grid-item p {
+    font-size: 1rem;
+    color: black !important; /* Ensure p color is black */
+  }
+  

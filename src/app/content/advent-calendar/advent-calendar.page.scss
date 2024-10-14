@@ -1,0 +1,77 @@
+:host {
+  display: block;
+  padding: 16px; /* Padding around the content */
+}
+
+ion-header {
+  background-color: #4CAF50; /* Header color */
+  color: white; /* Header text color */
+  text-align: center; /* Center align title */
+}
+
+ion-toolbar {
+  padding: 10px; /* Padding for the toolbar */
+}
+
+ion-title {
+  font-size: 24px; /* Font size for title */
+  font-weight: bold; /* Bold title */
+}
+
+::ng-deep ion-content {
+  --ion-background-color: #ffffff !important; /* Force background color */
+}
+
+
+ion-grid {
+  margin-top: 20px; /* Margin at the top of the grid */
+}
+
+ion-row {
+  justify-content: center; /* Center align the row content */
+  padding: 6px;
+}
+
+ion-col {
+  display: flex; /* Flexbox for alignment */
+  justify-content: center; /* Center items in each column */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Padding around each column */
+}
+
+.door {
+  width: 80px; /* Width of the door */
+  height: 80px; /* Height of the door */
+  background-color: #ff6f61; /* Door color */
+  color: white; /* Text color inside the door */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Center align horizontally */
+  align-items: center; /* Center align vertically */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  cursor: pointer; /* Pointer cursor for clickability */
+  transition: transform 0.2s; /* Animation effect on hover */
+}
+
+.door:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.day-number {
+  font-size: 20px; /* Font size for day number */
+  font-weight: bold; /* Bold font for visibility */
+}
+
+/* Modal styling */
+.modal-content {
+  padding: 20px; /* Padding inside modal */
+}
+
+.close-button {
+  background-color: red; /* Close button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  padding: 10px 15px; /* Padding inside button */
+}

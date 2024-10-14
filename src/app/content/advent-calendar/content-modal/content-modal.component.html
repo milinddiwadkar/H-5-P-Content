@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Content</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="closeModal()">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div *ngIf="content">
+    <ng-container [ngSwitch]="content.type">
+      <video *ngSwitchCase="'video'" [src]="content.value" controls></video>
+      <audio *ngSwitchCase="'audio'" [src]="content.value" controls></audio>
+      <img *ngSwitchCase="'image'" [src]="content.value" alt="Image" />
+      <p *ngSwitchCase="'text'">{{ content.value }}</p>
+      <a *ngSwitchCase="'link'" [href]="content.value" target="_blank">Visit Link</a>
+    </ng-container>
+  </div>
+</ion-content>

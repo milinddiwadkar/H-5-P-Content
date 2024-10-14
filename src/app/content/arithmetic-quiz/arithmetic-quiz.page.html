@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Math Quiz for Kids</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="quiz-container">
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <ion-text>
+        <h2>Score: {{ score }}</h2>
+      </ion-text>
+    </div>
+
+    <!-- Quiz Problem -->
+    <div class="problem-container">
+      <ion-card class="problem-card">
+        <ion-card-header>
+          <ion-card-title>{{ number1 }} {{ operator }} {{ number2 }} = ?</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </div>
+
+    <!-- Answer Options -->
+    <div class="answers-container">
+      <ion-button *ngFor="let answer of answers" (click)="checkAnswer(answer)" expand="block" shape="round" size="large">
+        {{ answer }}
+      </ion-button>
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback" *ngIf="feedbackMessage">
+      <ion-text [color]="feedbackColor">
+        <h3>{{ feedbackMessage }}</h3>
+      </ion-text>
+    </div>
+  </div>
+</ion-content>
